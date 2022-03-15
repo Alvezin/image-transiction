@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(252, 214, 169);
+    height: 120px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 55vh;
+}
+.slider img{
+    opacity: 0;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: 800ms;
+
+}
+
+.slider img.selected{
+    opacity: 1;
+}
